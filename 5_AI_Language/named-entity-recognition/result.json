@@ -1,0 +1,50 @@
+[
+  {
+    "Text": "Azure",
+    "Category": "Product",
+    "SubCategory": "ComputingProduct",
+    "Confidence Score": 1.0,
+    "Length": 5,
+    "Offset": 0
+  },
+  {
+    "Text": "Microsoft",
+    "Category": "Organization",
+    "SubCategory": null,
+    "Confidence Score": 0.87,
+    "Length": 9,
+    "Offset": 9
+  },
+  {
+    "Text": "cloud computing",
+    "Category": "Skill",
+    "SubCategory": null,
+    "Confidence Score": 0.81,
+    "Length": 15,
+    "Offset": 21
+  },
+  {
+    "Text": "services",
+    "Category": "Skill",
+    "SubCategory": null,
+    "Confidence Score": 0.66,
+    "Length": 8,
+    "Offset": 72
+  },
+  {
+    "Text": "manage",
+    "Category": "Skill",
+    "SubCategory": null,
+    "Confidence Score": 0.78,
+    "Length": 6,
+    "Offset": 103
+  },
+  {
+    "Text": "data centers",
+    "Category": "Skill",
+    "SubCategory": null,
+    "Confidence Score": 0.99,
+    "Length": 12,
+    "Offset": 151
+  }
+]

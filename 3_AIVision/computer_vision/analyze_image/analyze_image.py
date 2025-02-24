@@ -2,13 +2,13 @@ import os
 from azure.ai.vision.imageanalysis import ImageAnalysisClient
 from azure.ai.vision.imageanalysis.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # 環境変数からエンドポイントとキーを取得
 try:
     
     # .env ファイルを読み込む
-    load_dotenv()
+    #load_dotenv()
     endpoint = os.environ["VISION_ENDPOINT"]
     key = os.environ["VISION_KEY"]
 except KeyError:

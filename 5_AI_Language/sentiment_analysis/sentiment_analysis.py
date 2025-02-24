@@ -14,7 +14,7 @@ ta_client = TextAnalyticsClient(
 )
 
 try:
-  with open("./doc.md", "r") as f:
+  with open("./docs.md", "r",encoding="utf-8",errors="ignore") as f:
     documents = [f.read()]
   
   # テキスト分析APIで感情分析

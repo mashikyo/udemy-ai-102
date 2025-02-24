@@ -21,7 +21,7 @@ client = ImageAnalysisClient(
 
 # 画像解析の実行
 result = client.analyze(
-    image_data=open("./image-001.png", "rb"),
+    image_data=open("./image-012.png", "rb"),
     visual_features=[VisualFeatures.READ]
 )
 
@@ -29,5 +29,5 @@ result = client.analyze(
 print("result: ", json.dumps(result.as_dict(), indent=4, ensure_ascii=False))
 
 # Jsonをファイルに保存
-with open("result.json", "w") as f:
-    json.dump(result.as_dict(), f, indent=4, ensure_ascii=False)
+with open("result.json", "w",encoding="utf-8",errors="ignore") as f:
+    json.dump(result.as_dict(), f, indent=2, ensure_ascii=False)

@@ -15,7 +15,7 @@ client = TextAnalyticsClient(
 
 try:
     # ./docs.mdファイルを読み込み、documentsリストに格納
-    with open('./docs.md', 'r') as f:
+    with open('./docs.md', 'r',encoding="utf-8",errors="ignore") as f:
         documents = [f.read()]
     
     # テキスト分析APIを使用して言語を検出
@@ -29,7 +29,7 @@ try:
         "iso6391_name": response.primary_language.iso6391_name,
         "confidence_score": response.primary_language.confidence_score
     }
-    with open('./result.json', 'w') as f:
+    with open('./result.json', 'w',encoding="utf-8",errors="ignore") as f:
         f.write(json.dumps(result, indent=4))
 
 except Exception as err:
